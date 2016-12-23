@@ -16,7 +16,7 @@ function ($scope, $stateParams, $http) {
 $scope.push=function(x){
 	$http.defaults.headers.post["Content-Type"] = "application/json";
 	console.log(x);
-    $http.post('http://192.168.137.48:5000/foo',{hi:x})
+    $http.post('http://192.168.43.159:5000/foo',{hi:x})
 		.success(function(resp){
 			console.log(resp);
 		})
