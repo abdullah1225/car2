@@ -1,18 +1,32 @@
 <ion-view title="Page" id="page8">
-  <ion-content padding="true" class="has-header">
-    <div style="width:20%;opacity:.5;-webkit-transition: width 2s, height 2s;transition: width 2s, height 2s;" id="page-button-bar3" class="button-bar">
-      <button ng-click="push('n')" id="page-button10"  style="top:90px;border-radius:100px 100px 100px 100px;-webkit-transition: width 2s, height 2s;transition: width 2s, height 2s;" class="button button-positive  button-block icon ion-android-arrow-back"></button>
-      <button ng-click="push('m')" id="page-button11"  style="top:90px;border-radius:100px 100px 100px 100px;-webkit-transition: width 2s, height 2s;transition: width 2s, height 2s;"class="button button-positive  button-block icon ion-android-arrow-forward"></button>
+  <ion-content padding="true"  class="has-header">
+ <iframe class= 'webPage' style="
+   width: 95%;
+   height: 410px;
+
+ " name= "eventsPage" src="http://192.168.137.15/html/min.php">
+   </iframe>
+  
+  <button ng-hide="connected" ng-click="push('z')" class="button button-energized" style="bottom:350px;border-radius:100px 100px 100px 100px;">
+  <b>!</b>
+</button>
+   <button ng-show="connected" class="button button-balanced" style="border-radius:100px 100px 100px 100px;">
+  <b>O</b>
+</button>
+    <div style="width:15%;opacity:.5;-webkit-transition: width 2s, height 2s;transition: width 2s, height 2s;" id="page-button-bar3" class="button-bar">
+      <button ng-click="push('n')" id="page-button10"  style="right:8px;bottom:250px;border-radius:100px 100px 100px 100px;-webkit-transition: width 2s, height 2s;transition: width 2s, height 2s;" class="button button-positive  button-block icon ion-android-arrow-back"></button>
+      <button ng-click="push('m')" id="page-button11"  style="right:7px;bottom:250px;border-radius:100px 100px 100px 100px;-webkit-transition: width 2s, height 2s;transition: width 2s, height 2s;"class="button button-positive  button-block icon ion-android-arrow-forward"></button>
     </div>
     <div style="width:20%;margin-left:70%;opacity:.5" id="page-button-bar4" class="button-bar">
-      <button ng-click="push('r')" id="page-button20" style="border-radius:100px 100px 100px 100px;" class="button button-positive  button-block icon ion-arrow-return-left"></button>
-      <button ng-click="push('w')" on-release="push('x')" on-hold="push('f')" id="page-button21" style="margin-left:5px;top:17px;border-radius:100px 100px 100px 100px;" class="button button-positive  button-block icon ion-arrow-up-b"></button>
-      <button ng-click="push('t')" id="page-button22" style="margin-left:5px;border-radius:100px 100px 100px 100px;" class="button button-positive  button-block icon ion-arrow-return-right"></button>
+      <button ng-click="push('r')" id="page-button20" style="left:85px;bottom:350px;border-radius:100px 100px 100px 100px;" class="button button-positive  button-block icon ion-arrow-return-left"></button>
+      <button ng-click="push('w')" on-release="push('x')" on-hold="push('f')" style="left:80px;bottom:350px;margin-left:5px;border-radius:100px 100px 100px 100px;" id="page-button21"  class="button button-positive  button-block icon ion-arrow-up-b"></button>
+      <button ng-click="push('t')" id="page-button22" style="left:75px;bottom:350px;margin-left:5px;border-radius:100px 100px 100px 100px;" class="button button-positive  button-block icon ion-arrow-return-right"></button>
     </div>
     <div style="width:20%;margin-left:70%;opacity:.5" id="page-button-bar5" class="button-bar">
-      <button ng-click="push('a')" on-release="push('x')" on-hold="push('v')" style="border-radius:100px 100px 100px 100px;" id="page-button23" class="button button-positive  button-block icon ion-arrow-left-b"></button>
-      <button ng-click="push('s')" on-release="push('x')" on-hold="push('g')" style="margin-left:3px;border-radius:100px 100px 100px 100px;" id="page-button24" class="button button-positive  button-block icon ion-arrow-down-b"></button>
-      <button ng-click="push('d')" on-release="push('x')" on-hold="push('b')" style="margin-left:3px;border-radius:100px 100px 100px 100px;" id="page-button25" class="button button-positive  button-block icon ion-arrow-right-b"></button>
+      <button ng-click="push('a')" on-release="push('x')" on-hold="push('v')" style="left:85px;bottom:350px;border-radius:100px 100px 100px 100px;" id="page-button23" class="button button-positive  button-block icon ion-arrow-left-b"></button>
+      <button ng-click="push('s')" on-release="push('x')" on-hold="push('g')" style="left:80px;bottom:350px;margin-left:3px;border-radius:100px 100px 100px 100px;" id="page-button24" class="button button-positive  button-block icon ion-arrow-down-b"></button>
+      <button ng-click="push('d')" on-release="push('x')" on-hold="push('b')" style="left:75px;bottom:350px;margin-left:3px;border-radius:100px 100px 100px 100px;" id="page-button25" class="button button-positive  button-block icon ion-arrow-right-b"></button>
     </div>
   </ion-content>
+ 
 </ion-view>
